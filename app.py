@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 from raster_stats import sector_raster_stats as rstats
 from polygon import test_geo, polygons
 #import jsonify
-app = Flask(__name__)
+
 
 @app.route('/test')
 def tes_page():
@@ -27,7 +27,3 @@ def polygon():
         }
 
     return jsonify(response)
-
-
-if __name__ == '__main__':
-    app.run()
