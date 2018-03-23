@@ -57,6 +57,3 @@ def sector_raster_stats(lat, lon, radius):
     else:
         return {'error': 'Coordinates are not in the boundingbox',
                'BoundingBox': src.bounds}
-
-stats = sector_raster_stats(-6,37,1200)
-print(stats)
